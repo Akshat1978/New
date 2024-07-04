@@ -15,8 +15,6 @@ const Navbar = () => {
       <Link to="/">
         <img src={logo} alt="hoobank" className="w-[127px] h-10" />
       </Link>
-
-      /*  mobile view button cross sybmol like somsthing */
       <div className="block sm:hidden">
         <button onClick={handleToggle} className="text-white">
           {toggle ? (
@@ -26,8 +24,6 @@ const Navbar = () => {
           )}
         </button>
       </div>
-
-      /* this portion added to make further changes*/
       <div className={`absolute top-0 left-0 w-full h-screen bg-gray-800 z-50 ${toggle ? 'block' : 'hidden'}`}>
         <ul className="pt-20 text-center">
           {navLinks.map((nav) => (
