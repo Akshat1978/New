@@ -15,7 +15,6 @@ import {
   Login,
 } from "./components";
 import HashLoader from "react-spinners/HashLoader";
-
 function App() {
   const [loading, setLoading] = useState(false);
 
